@@ -1,38 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a1428;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.page {
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.page h1 {
+  font-size: 24px;
+  color: #00c2a8;
+  margin-bottom: 8px;
+}
+
+.page p {
+  color: #a0b4c8;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #10203a;
+  border: 1px solid #00c2a833;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  background: #00c2a8;
+  color: #0a1428;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.btn:hover {
+  background: #00a896;
+}
+
+.btn-red {
+  background: #ff4444;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-red:hover {
+  background: #cc0000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  width: 100%;
+  background: #10203a;
+  border: 1px solid #00c2a855;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #00c2a8;
+}
+
+.tag {
+  display: inline-block;
+  background: #00c2a822;
+  color: #00c2a8;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.tag-red {
+  background: #ff444422;
+  color: #ff4444;
+}
+
+.tag-yellow {
+  background: #ffd04022;
+  color: #ffd040;
 }
